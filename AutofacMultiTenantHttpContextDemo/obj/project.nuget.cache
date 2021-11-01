@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "r2mH+BT2Qr7VQequ9zuP7A9SdkjaGVjMIacImvIf3ImYwd76seWA2rpKVKDe+i8ZvR9/KLZFETrgctsPBTB8gA==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\Jonty_POC\\AutoFacMultiTenantHttpContextDemo\\AutofacMultiTenantHttpContextDemo\\AutofacMultiTenantHttpContextDemo\\AutofacMultiTenantHttpContextDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JontyCawley-graham\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\JontyCawley-graham\\.nuget\\packages\\autofac.aspnetcore.multitenant\\5.0.0\\autofac.aspnetcore.multitenant.5.0.0.nupkg.sha512",
+    "C:\\Users\\JontyCawley-graham\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
+    "C:\\Users\\JontyCawley-graham\\.nuget\\packages\\autofac.multitenant\\6.0.0\\autofac.multitenant.6.0.0.nupkg.sha512",
+    "C:\\Users\\JontyCawley-graham\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\JontyCawley-graham\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
