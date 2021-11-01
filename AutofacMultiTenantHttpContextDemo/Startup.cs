@@ -6,6 +6,7 @@ using Autofac;
 using Autofac.Multitenant;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -27,7 +28,7 @@ namespace AutofacMultiTenantHttpContextDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpContextAccessor();
+            // services.AddHttpContextAccessor();
             services.AddAutofacMultitenantRequestServices();
             services.AddControllers();
         }
@@ -58,7 +59,7 @@ namespace AutofacMultiTenantHttpContextDemo
         {
             // If the strategy is changed to RngTenantIdentificationStrategy it will work (but tenants will be assigned
             // randomly)
-            var strategy = new HeaderTenantIdentificationStrategy();
+            var strategy = new HeaderTenantIdentificationStrategy(container.Resolve<IHttpContextAccessor>());
             var mtc = new MultitenantContainer(strategy, container);
             mtc.ConfigureTenant("one", cb => cb.RegisterType<NumberOneGreeter>().As<IGreeter>());
             mtc.ConfigureTenant("two", cb => cb.RegisterType<NumberTwoGreeter>().As<IGreeter>());
